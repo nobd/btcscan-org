@@ -1,20 +1,16 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<!-- Creator: CorelDRAW 2019 (64-Bit) -->
-<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" preserveAspectRatio="xMidYMid meet"  x="0"   y="0"  viewBox="0 0 480 640" width="640" height="480" version="1.1" shape-rendering="geometricPrecision" text-rendering="geometricPrecision" image-rendering="optimizeQuality"
- xmlns:xlink="http://www.w3.org/1999/xlink"
- xmlns:xodm="http://www.corel.com/coreldraw/odm/2003">
- <g id="Layer_x0020_1">
-  <metadata id="CorelCorpID_0Corel-Layer"/>
-  <g id="_1421394342400">
-   <g>
-    <polygon fill="#343434" fill-rule="nonzero" points="392.07,0 383.5,29.11 383.5,873.74 392.07,882.29 784.13,650.54 " transform="translate(50) scale(0.5, 0.5)"/>
-    <polygon fill="#8C8C8C" fill-rule="nonzero" points="392.07,0 -0,650.54 392.07,882.29 392.07,472.33 "  transform="translate(50) scale(0.5, 0.5)" />
-    <polygon fill="#3C3C3B" fill-rule="nonzero" points="392.07,956.52 387.24,962.41 387.24,1263.28 392.07,1277.38 784.37,724.89 "  transform="translate(50) scale(0.5, 0.5)" />
-    <polygon fill="#8C8C8C" fill-rule="nonzero" points="392.07,1277.38 392.07,956.52 -0,724.89 "  transform="translate(50) scale(0.5, 0.5)" />
-    <polygon fill="#141414" fill-rule="nonzero" points="392.07,882.29 784.13,650.54 392.07,472.33 "  transform="translate(50) scale(0.5, 0.5)" />
-    <polygon fill="#393939" fill-rule="nonzero" points="0,650.54 392.07,882.29 392.07,472.33 "  transform="translate(50) scale(0.5, 0.5)" />
-   </g>
-  </g>
+<svg width="33" height="32" viewBox="0 0 33 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+ <g clip-path="url(#clip0_1649_9)">
+  <path d="M16.5332 32.0012C25.3698 32.0012 32.5332 24.8378 32.5332 16.0012C32.5332 7.16466 25.3698 0.0012207 16.5332 0.0012207C7.69665 0.0012207 0.533203 7.16466 0.533203 16.0012C0.533203 24.8378 7.69665 32.0012 16.5332 32.0012Z" fill="#627EEA"/>
+  <path d="M17.0312 4.00122V12.8712L24.5283 16.2212L17.0312 4.00122Z" fill="white" fill-opacity="0.602"/>
+  <path d="M17.0312 4.00122L9.5332 16.2212L17.0312 12.8712V4.00122Z" fill="white"/>
+  <path d="M17.0312 21.9692V27.9962L24.5333 17.6172L17.0312 21.9692Z" fill="white" fill-opacity="0.602"/>
+  <path d="M17.0312 27.9962V21.9682L9.5332 17.6172L17.0312 27.9962Z" fill="white"/>
+  <path d="M17.0312 20.5743L24.5283 16.2213L17.0312 12.8733V20.5743Z" fill="white" fill-opacity="0.2"/>
+  <path d="M9.5332 16.2213L17.0312 20.5743V12.8733L9.5332 16.2213Z" fill="white" fill-opacity="0.602"/>
  </g>
+ <defs>
+  <clipPath id="clip0_1649_9">
+   <rect width="32" height="32" fill="white" transform="translate(0.533203 0.0012207)"/>
+  </clipPath>
+ </defs>
 </svg>

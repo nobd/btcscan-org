@@ -54,7 +54,6 @@ const ogUrlDriver = description$ => O.from(description$)
 const canLinkDriver = description$ => O.from(description$)
   .subscribe(description => {
     const element = document.querySelector('link[rel="canonical"]');
-    console.log('here', description);
 
     if (description && description !== 'none') {
       if (!element) {

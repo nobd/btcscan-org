@@ -81,7 +81,7 @@ a, a:link, a:visited, a:hover, a:focus {
 .main-nav li{
   text-decoration: none;
   list-style: none;
-  margin-right: 30px;
+  margin-right: 0;
 }
 
 .main-nav li a{
@@ -97,8 +97,8 @@ a, a:link, a:visited, a:hover, a:focus {
 
 
 .main-nav .menu-logo{
-  height: 30px;
-  width: 30px;
+  height: 40px;
+  width: 40px;
   margin-right: 8px;
   margin-bottom: 2px;
 }
@@ -542,7 +542,7 @@ table th {
   height: 31px;
 }
 
- .prev-next-blocks-btns > div:nth-child(1) a > div > div:nth-child(2) {
+.prev-next-blocks-btns > div:nth-child(1) a > div > div:nth-child(2) {
   text-align: center;
 }
 
@@ -598,7 +598,7 @@ body > .container, .navbar > .container, > .container, .content-wrap > div > .co
 }
 
 .blocks-table .blocks-table-row.header > * {
-  
+
   color: #78838e;
   font-weight: 600;
 }
@@ -1337,9 +1337,9 @@ img.footer_container_content_onion-links_icon {
 
 /* preload images. css hack via https://stackoverflow.com/a/14390213/865693 */
 body::after{
-    position:absolute; width:0; height:0; overflow:hidden; z-index:-1;
-    content: url(img/icons/plus.png) url(img/icons/arrow_right_blu.png) url(img/icons/arrow_left_blu.png) url(img/icons/copy.png)
-             url(img/icons/menu-logo.svg) url(img/Loading.gif) url(img/icons/search.png);
+  position:absolute; width:0; height:0; overflow:hidden; z-index:-1;
+  content: url(img/icons/plus.png) url(img/icons/arrow_right_blu.png) url(img/icons/arrow_left_blu.png) url(img/icons/copy.png)
+  url(img/icons/menu-logo.svg) url(img/Loading.gif) url(img/icons/search.png);
 }
 
 /* only show loading animation when we're loading for more than 0.5s,
@@ -1466,6 +1466,7 @@ body::after{
 .nav-link {
   color: #fff;
   font-weight: 600;
+  padding: 0.5rem 0.5rem;
 }
 
 .nav-link:hover {
@@ -1502,15 +1503,15 @@ body::after{
 
 /* input/output counter */
 .vouts, .vins {
-    counter-reset: txcnt -1;
+  counter-reset: txcnt -1;
 }
 .vout-header-container > span:first-child:before, .vin-header-container > span:first-child:before {
-    counter-increment: txcnt;
-    content: "#" counter(txcnt);
-    padding-right: 5px;
-    font-size: 0.9em;
-    color: #475562;
-    margin-left: -19px;
+  counter-increment: txcnt;
+  content: "#" counter(txcnt);
+  padding-right: 5px;
+  font-size: 0.9em;
+  color: #475562;
+  margin-left: -19px;
 }
 .theme-light .vout-header-container > span:first-child:before, .theme-light .vin-header-container > span:first-child:before {
   color: #c3cbd3;
@@ -1546,79 +1547,79 @@ body::after{
 
 @media only screen and (max-width: 995px) {
 
-    /* transactions table  */
+  /* transactions table  */
 
-    div.transactions-table-row.header {
-      display:none !important;
-    }
+  div.transactions-table-row.header {
+    display:none !important;
+  }
 
-    /* table row (transaction) */
-    .transactions-table-row {
-      margin: 0 0 1rem 0;
-      display: flex !important;
-      flex-direction: column !important;
-      height: auto !important;
-      padding: 20px;
-    }
+  /* table row (transaction) */
+  .transactions-table-row {
+    margin: 0 0 1rem 0;
+    display: flex !important;
+    flex-direction: column !important;
+    height: auto !important;
+    padding: 20px;
+  }
 
-    .transactions-table-link-row {
-      margin-bottom: 20px;
-    }
+  .transactions-table-link-row {
+    margin-bottom: 20px;
+  }
 
-    .transactions-table-link-row:nth-child(odd) {
-      background: #22242c;
-    }
+  .transactions-table-link-row:nth-child(odd) {
+    background: #22242c;
+  }
 
-    /* table row (transaction item) */
-    .transactions-table .transactions-table-row.block-data > * {
-      border: none;
-      position: relative;
-      padding-left: 0 !important;
-      padding: 10px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      width: 100% !important;
-      text-align: right;
-      /* border-top: 1px solid #22242C; */
-    }
+  /* table row (transaction item) */
+  .transactions-table .transactions-table-row.block-data > * {
+    border: none;
+    position: relative;
+    padding-left: 0 !important;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100% !important;
+    text-align: right;
+    /* border-top: 1px solid #22242C; */
+  }
 
-    .transactions-table-row {
-      /* Behave  like a "row" */
-      display: block;
-    }
+  .transactions-table-row {
+    /* Behave  like a "row" */
+    display: block;
+  }
 
-    div.transactions-table-cell {
-      display: flex !important;
-      justify-content: space-between;
-      width: 100% !important;
-      padding: 10px 0;
-      word-break: break-all;
-      text-align: right;
-    }
+  div.transactions-table-cell {
+    display: flex !important;
+    justify-content: space-between;
+    width: 100% !important;
+    padding: 10px 0;
+    word-break: break-all;
+    text-align: right;
+  }
 
-    .transactions-table .transactions-table-row > div:nth-child(1) {
-      padding-left: 0px;
-    }
+  .transactions-table .transactions-table-row > div:nth-child(1) {
+    padding-left: 0px;
+  }
 
-    div.transactions-table-cell:before {
-      width: 45%;
-      padding-right: 10px;
-      font-weight: 600;
-      color: #78838e;
-      margin-right: 50px;
-      word-break: keep-all;
-    }
+  div.transactions-table-cell:before {
+    width: 45%;
+    padding-right: 10px;
+    font-weight: 600;
+    color: #78838e;
+    margin-right: 50px;
+    word-break: keep-all;
+  }
 
-    /*
-    Label the data
-    */
-    div.transactions-table-cell:before { content: attr(data-label); text-align: left; width: auto;}
+  /*
+  Label the data
+  */
+  div.transactions-table-cell:before { content: attr(data-label); text-align: left; width: auto;}
 }
 
 
 @media only screen and (max-width: 990px) {
- 
+
   .page-search-bar {
     margin: 5px auto 30px auto;
   }
@@ -1634,59 +1635,59 @@ body::after{
 
 @media only screen and (max-width: 850px) {
 
-    /* blocks table */
+  /* blocks table */
 
-    div.blocks-table-row.header {
-      display:none;
-    }
+  div.blocks-table-row.header {
+    display:none;
+  }
 
-    /* table row (transaction) */
-    .blocks-table-row {
-      margin: 0 0 1rem 0;
-      display: flex;
-      flex-direction: column;
-      height: auto !important;
-      padding: 20px;
-    }
+  /* table row (transaction) */
+  .blocks-table-row {
+    margin: 0 0 1rem 0;
+    display: flex;
+    flex-direction: column;
+    height: auto !important;
+    padding: 20px;
+  }
 
-    .blocks-table-link-row {
-      margin-bottom: 20px;
-    }
+  .blocks-table-link-row {
+    margin-bottom: 20px;
+  }
 
-    .blocks-table-link-row:nth-child(odd) {
-      background: #22242c;
-    }
+  .blocks-table-link-row:nth-child(odd) {
+    background: #22242c;
+  }
 
-    /* table row (transaction item) */
-    .blocks-table .blocks-table-row.block-data > * {
-      border: none;
-      position: relative;
-      padding-left: 0 !important;
-      padding: 10px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      width: 100% !important;
-      text-align: right;
-      /* border-top: 1px solid #22242C; */
-    }
+  /* table row (transaction item) */
+  .blocks-table .blocks-table-row.block-data > * {
+    border: none;
+    position: relative;
+    padding-left: 0 !important;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100% !important;
+    text-align: right;
+    /* border-top: 1px solid #22242C; */
+  }
 
-    .blocks-table-row {
-      /* Behave  like a "row" */
-      display: block;
-    }
+  .blocks-table-row {
+    /* Behave  like a "row" */
+    display: block;
+  }
 
-    div.blocks-table-cell:before {
-      width: 45%;
-      padding-right: 10px;
-      font-weight: 600;
-      color: #78838e;
-    }
+  div.blocks-table-cell:before {
+    width: 45%;
+    padding-right: 10px;
+    font-weight: 600;
+    color: #78838e;
+  }
 
-    /*
-    Label the data
-    */
-    div.blocks-table-cell:before { content: attr(data-label); text-align: left; width: auto;}
+  /*
+  Label the data
+  */
+  div.blocks-table-cell:before { content: attr(data-label); text-align: left; width: auto;}
 }
 
 
@@ -1734,26 +1735,26 @@ body::after{
     padding: 0 !important;
   }
 
-.transaction-box .ins-and-outs .direction-arrow {
-  display: flex;
-  justify-self: center;
-}
+  .transaction-box .ins-and-outs .direction-arrow {
+    display: flex;
+    justify-self: center;
+  }
 
-.ins-and-outs {
-  position: relative !important;
-}
+  .ins-and-outs {
+    position: relative !important;
+  }
 
-.ins-and-outs_spacer {
-  height: 20px;
-  width: 10px;
-}
+  .ins-and-outs_spacer {
+    height: 20px;
+    width: 10px;
+  }
 
-.direction-arrow-container {
-  width: 100%;
-  height: auto !important;
-  margin: 0;
-  padding: 0;
-}
+  .direction-arrow-container {
+    width: 100%;
+    height: auto !important;
+    margin: 0;
+    padding: 0;
+  }
 
 }
 
@@ -1790,7 +1791,7 @@ body::after{
 }
 
 @media only screen and (max-width: 550px) {
-  
+
 
   .page-search-bar {
     margin: 5px auto 30px auto;
@@ -1850,7 +1851,7 @@ body::after{
   .title-bar-recent h1 {
     font-size: 18px;
   }
-  
+
   .title-bar-recent h1 a {
     margin-right: 20px;
   }
@@ -1906,8 +1907,8 @@ body::after{
   border-left: 6px solid transparent;
   content: '';
   height: 0;
-    top: 20px;
-    left: 20px;
+  top: 20px;
+  left: 20px;
   width: 0;
 }
 .code-button-btn:before {
@@ -1917,7 +1918,7 @@ body::after{
   content: 'Copied!';
   font-size: 14px;
   padding: 6px 10px;
-    top: 26px;
+  top: 26px;
   white-space: nowrap;
 }
 
@@ -2121,7 +2122,7 @@ dl.mempool-histogram .bar {
   position: relative;
   top: 50%;
   -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+  transform: translateY(-50%);
   transition: background-color .3s ease;
   cursor: pointer;
   white-space: nowrap;
@@ -2145,8 +2146,8 @@ dl.mempool-histogram .bar:before {
 }
 
 
-/**** 
-  * Burger Menu Hover works on Bigscreen only 
+/****
+  * Burger Menu Hover works on Bigscreen only
   * Hover is used for displaying the dropdown menu to support NO-JS
 *****/
 @media only screen and (min-width: 500px) {
@@ -2217,16 +2218,16 @@ dl.mempool-histogram .bar:before {
 }
 
 .toggle-menu .section1 .wallets-link a{
-    display: flex;
-    font-size: 12px;
-    justify-content: center;
-    align-items:center;
-    color: #fff;
-    border: 1px solid #4e555d;
-    padding: 5px 10px;
-    border-radius: 5px;
-    margin-right: 5px;
-    margin-bottom: 5px;
+  display: flex;
+  font-size: 12px;
+  justify-content: center;
+  align-items:center;
+  color: #fff;
+  border: 1px solid #4e555d;
+  padding: 5px 10px;
+  border-radius: 5px;
+  margin-right: 5px;
+  margin-bottom: 5px;
 }
 
 .toggle-menu .section1 .wallets-link a img{
@@ -2270,7 +2271,7 @@ dl.mempool-histogram .bar:before {
 
 .sub-navbar{
   width: 100%;
-  background-color: #21272d; 
+  background-color: #21272d;
   display: flex;
   margin-bottom: 40px;
 }
@@ -2355,11 +2356,11 @@ a.back-link img{
 }
 
 .blocks-table .blocks-table-row, .transactions-table .transactions-table-row {
-  padding:20px 30px; 
+  padding:20px 30px;
 }
 
 .assets-table .assets-table-row{
-  padding:20px 40px; 
+  padding:20px 40px;
 }
 
 .stats-table{
@@ -2407,10 +2408,10 @@ h3.table-title{
     padding: 0 20px;
   }
 
-/**** 
-  * Burger Menu for Mobile 
-  * A javascript function (toggleIcon) adds a className (open-menu) to toggle the menu
-*****/
+  /****
+    * Burger Menu for Mobile
+    * A javascript function (toggleIcon) adds a className (open-menu) to toggle the menu
+  *****/
   .toggle-container .toggle-menu{
     width: 95vw;
     position: absolute;
@@ -2430,12 +2431,12 @@ h3.table-title{
     opacity: 0;
     top: 50%;
   }
-  
+
   .toggle-container.open-menu .burger-icon span:first-child {
     opacity: 1;
     transform: rotate(45deg);
   }
-  
+
   .toggle-container.open-menu .burger-icon span:last-child {
     opacity: 1;
     transform: rotate(-45deg);
